@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Viajes en el Tiempo",
+        "type": "booster",
+        "description": "Booster de Inicio para comenzar tus Batallas",
+        "priceInMoney": 200,
+        "priceInTokens": 20,
+        "image_url": "../src/assets/booster_pack.jpg",
+        "cardsList": [
+            {"cardId": "ES-A001", "weight": 15},
+            {"cardId": "ES-A002", "weight": 15},
+            {"cardId": "ES-A003", "weight": 15},
+            {"cardId": "ES-A004", "weight": 5},
+            {"cardId": "ES-A005", "weight": 30},
+            {"cardId": "ES-A006", "weight": 15},
+            {"cardId": "ES-A007", "weight": 15},
+            {"cardId": "ES-A008", "weight": 15},
+            {"cardId": "ES-A009", "weight": 15},
+            {"cardId": "ES-A010", "weight": 15}
+        ],
+        "category": "(id de la categoria de este producto)"
+    },
+    {
+        "name": "Crisis Cronologica",
+        "type": "booster",
+        "description": "Booster para llevar a otro nivel tu Juego",
+        "priceInMoney": 300,
+        "priceInTokens": 25,
+        "image_url": "../src/assets/booster_pack_1.jpg",
+        "cardsList": [
+            {"cardId": "ES-A011", "weight": 60},
+            {"cardId": "ES-A012", "weight": 60},
+            {"cardId": "ES-A013", "weight": 15},
+            {"cardId": "ES-A014", "weight": 15},
+            {"cardId": "ES-A015", "weight": 15},
+            {"cardId": "ES-A016", "weight": 60},
+            {"cardId": "ES-A017", "weight": 15},
+            {"cardId": "ES-A018", "weight": 30},
+            {"cardId": "ES-A019", "weight": 5},
+            {"cardId": "ES-A020", "weight": 90},
+            {"cardId": "ES-A021", "weight": 90},
+            {"cardId": "ES-A022", "weight": 5},
+            {"cardId": "ES-A023", "weight": 30},
+            {"cardId": "ES-A024", "weight": 15},
+            {"cardId": "ES-A025", "weight": 15}
+        ],
+        "category": "(id de la categoria de este producto)"
+    }
+]

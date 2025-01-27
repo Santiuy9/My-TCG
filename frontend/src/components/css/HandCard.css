@@ -1,0 +1,34 @@
+.hand-card {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0px;
+    transition: all 0.2s ease;
+}
+
+.hand-card:hover {
+    top: -50px;
+}
+
+.hand-card-img {
+    height: 200px;
+}
+
+.hand-card-name {
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+}
+
+.hand-card:active {
+    cursor: grabbing;
+}

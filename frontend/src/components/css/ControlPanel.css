@@ -1,0 +1,14 @@
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 50%;
+    width: 100%;
+    color: aliceblue;
+}
+
+.butitons {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,102 @@
+.fancy-button {
+    position: relative;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .fancy-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+  }
+  
+  .fancy-button:active {
+    transform: translateY(1px);
+  }
+  
+  .button-text {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button-effect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+  }
+  
+  .fancy-button:hover .button-effect {
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Variantes */
+  .fancy-button.primary {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+  }
+  
+  .fancy-button.secondary {
+    background: linear-gradient(45deg, #34495e, #2c3e50);
+    color: white;
+  }
+  
+  .fancy-button.success {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    color: white;
+  }
+  
+  .fancy-button.danger {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+  }
+  
+  /* Tamaños */
+  .fancy-button.small {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .fancy-button.medium {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  
+  .fancy-button.large {
+    font-size: 18px;
+    padding: 16px 32px;
+  }
+  
+  /* Estado deshabilitado */
+  .fancy-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .fancy-button:disabled:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Efecto de enfoque para accesibilidad */
+  .fancy-button:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  

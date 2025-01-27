@@ -1,0 +1,168 @@
+.deck-editor {
+    width: calc(100vw - 4rem);
+    position: absolute;
+    top: 75px;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    height: 80vh;
+    background-color: #f0f0f0;
+    font-family: "Arial", sans-serif;
+}
+  
+.inventory,
+.deck {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.deck {
+    flex: 1;
+}
+  
+.inventory h2,
+.deck h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+  
+.card-list-inventory {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px);
+    padding-right: 10px;
+}
+  
+.card-list-inventory::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.card-list-inventory::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+.card-list-inventory::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+  
+.card-list-inventory::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+  
+.deck-editor .card {
+    width: 150px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    cursor: grab;
+}
+  
+.deck-editor .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+  
+.deck-editor .card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+  
+.deck-editor .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+.deck-editor .card p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #666;
+}
+  
+.deck-editor .card.disabled {
+    filter: grayscale(1);
+    cursor: not-allowed;
+}
+.deck-editor .card.disabled:hover {
+    transform: scale(1);
+}
+  
+.deck-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+  
+.deck-info button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.deck-info button:hover {
+    background-color: #45a049;
+}
+  
+.card-list-deck {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+}
+  
+.card-list-deck .card {
+    width: calc(10% - 0.8rem);
+    margin-bottom: 0;
+}
+  
+.card-list-deck .card img {
+    width: 100%;
+    height: auto;
+}
+  
+@media (max-width: 1200px) {
+    .deck-editor {
+      flex-direction: column;
+    }
+  
+    .card-list-inventory,
+    .card-list-deck {
+      max-height: 50vh;
+    }
+  
+    .card-list-deck .card {
+      width: calc(25% - 0.75rem);
+    }
+}
+  
+@media (max-width: 768px) {
+    .card-list-deck .card {
+      width: calc(33.33% - 0.67rem);
+    }
+}
+  
+@media (max-width: 480px) {
+    .card-list-deck .card {
+      width: calc(50% - 0.5rem);
+    }
+}

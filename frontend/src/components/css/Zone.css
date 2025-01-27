@@ -1,0 +1,27 @@
+.zone {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    /* background-color: #f9f9f9; */
+}
+
+.zone-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    text-align: center;
+}
+
+.zone-slots {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slot {
+    border: 2px dashed #333 ;
+    width: 50px;
+    height: 75px;
+}
